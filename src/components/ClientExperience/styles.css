@@ -1,0 +1,119 @@
+.client-xp-container {
+    background-color: white;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 1.2em;
+}
+
+.client-xp-container-desktop {
+    display: none;
+}
+
+.circle {
+    width: 90%;
+    margin-top: -50px;
+    transform: rotate(15deg);
+    margin-left: -50px;
+    z-index: 0;
+}
+
+.client-xp-container h1 {
+    margin: 0;
+    margin-top: -300px;
+    font-size: 32px;
+    z-index: 3;
+    position: relative;
+}
+
+.client-xp-container b {
+    font-size: 40px;
+    color: var(--yellow);
+}
+
+.client-xp-title {
+    z-index: 3;
+}
+
+.mock-cel {
+    width: 140%;
+    overflow-y: hidden;
+    margin-right: -170px;
+}
+
+.content-client-xp {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.client-xp-cards {
+    width: 85%;
+    background: rgba(24, 28, 33, 1);
+    padding: 12px 24px 12px 24px;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.client-xp-cards img {
+    width: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+    .client-xp-container {
+        display: none;
+    }
+
+    .client-xp-container-desktop {
+        display: flex;
+        width: 100% !important;
+        flex-direction: row;
+        background-color: #fff;
+        justify-content: space-around;
+        align-items: center;
+        color: black;
+        background-image: url("@assets/circles.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .circle {
+        margin: 0;
+    }
+
+    .content-client-xp h1{
+        width: 100%;
+        display: block;
+        font-size: 48px;
+        text-align: left;
+        margin: 0;
+    }
+    .content-client-xp button{
+        background: linear-gradient(272.78deg, #FFBA16 46.64%, #FFE91E 99.35%);
+        color: #000;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .content-client-xp b{
+        color: var(--yellow);
+    }
+
+    .header-client-xp img {
+        height: 75%;
+    }
+    .content-client-xp p{
+        font-size: 18px;
+    }
+}

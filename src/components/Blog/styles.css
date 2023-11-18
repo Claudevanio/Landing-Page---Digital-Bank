@@ -1,0 +1,135 @@
+.card-blog {
+    border: 1px solid var(--yellow);
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    margin-right: 8px;
+}
+
+.card-blog img {
+    width: 100%;
+}
+
+.blog-container {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.text-blog {
+    text-align: left;
+}
+
+.text-blog p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.text-blog button {
+    border: 1px solid var(--yellow);
+    border-radius: 20px;
+}
+
+.blog-container .p-carousel-next {
+    position: absolute !important;
+    right: 5px;
+    bottom: -12%;
+    background-color: rgba(217, 217, 217, 0.507);
+    border-radius: 50% !important;
+    height: 48px;
+    width: 48px;
+}
+
+.blog-container .p-carousel-prev {
+    position: absolute !important;
+    left: 5px;
+    bottom: -12%;
+    z-index: 2;
+    background-color: rgba(217, 217, 217, 0.507);
+    border-radius: 50% !important;
+    height: 48px;
+    width: 48px;
+}
+
+.blog-container .p-carousel-container {
+    position: relative !important;
+}
+
+.indicator-carousel-blog {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.indicator-carousel-blog button {
+    background-color: grey;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0 !important;
+}
+
+.indicator-carousel-blog [data-p-highlight="true"] button {
+    background-color: var(--yellow);
+}
+
+.p-carousel-prev,
+.p-carousel-next {
+    padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .card-blog{
+        width: 90%;
+    }
+    .p-carousel-item{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .p-carousel-content{
+        display: flex;
+        flex-direction: column-reverse;
+        color: #fff;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .blog-container .p-carousel-next {
+        position: absolute !important;
+        right: 5%;
+        top: -13%;
+        background-color: rgba(217, 217, 217, 0.507);
+        border-radius: 50% !important;
+        height: 48px;
+        width: 48px;
+    }
+    .indicator-carousel-blog{
+        width: 25%;
+        justify-self: left;
+    }
+    
+    .blog-container .p-carousel-prev {
+        position: absolute !important;
+        left: 77%;
+        top: -16%;
+        z-index: 2;
+        background-color: rgba(217, 217, 217, 0.507);
+        border-radius: 50% !important;
+        height: 48px;
+        width: 48px;
+    }
+    .blog-container .p-carousel-next {
+        position: absolute !important;
+        left: 95%;
+        top: -16%;
+        z-index: 2;
+        background-color: rgba(217, 217, 217, 0.507);
+        border-radius: 50% !important;
+        height: 48px;
+        width: 48px;
+    }
+}

@@ -1,0 +1,227 @@
+.cases-container h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.cases-container b {
+    color: var(--yellow);
+    position: relative;
+}
+
+.card-case-container {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(34, 37, 42, 1);
+    gap: 2rem;
+}
+
+.case-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.case-title img {
+    width: 48px;
+}
+
+.img-case {
+    background-image: url("@assets/elipse-red.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 48px 0;
+}
+
+.img-case img {
+    width: 100%;
+}
+
+.details-case {
+    display: flex;
+    flex-direction: column;
+}
+
+.diferenciais-case {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.divider-card {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    font-size: 14px;
+    padding: 1rem;
+    text-align: left;
+}
+
+.divider-card p,
+h3 {
+    margin: 0;
+}
+
+.cases-container .diferencial-card {
+    display: flex;
+    border: 1px solid #575e67;
+    border-radius: 8px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.cases-container .logo-diferencial {
+    background-color: red;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12.699999809265137px 0px rgba(240, 61, 62, 1);
+}
+
+.cases-container .p-carousel-next {
+    position: absolute !important;
+    right: 5px;
+    top: 20%;
+    background-color: rgba(217, 217, 217, 0.507);
+    border-radius: 50% !important;
+    height: 48px;
+    width: 48px;
+}
+
+.cases-container .p-carousel-prev {
+    position: absolute !important;
+    left: 5px;
+    top: 20%;
+    z-index: 2;
+    background-color: rgba(217, 217, 217, 0.507);
+    border-radius: 50% !important;
+    height: 48px;
+    width: 48px;
+}
+
+.cases-container .p-carousel-container {
+    position: relative !important;
+}
+
+
+.indicator-carousel{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.indicator-carousel button{
+    background-color: grey;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0 !important;
+}
+.indicator-carousel [data-p-highlight="true"] button{
+    background-color: var(--yellow);
+}
+
+.p-carousel-prev, .p-carousel-next {
+    padding: 0;
+}
+.card-case-container-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .card-case-container{
+        display: none;
+    }
+    #cases{
+        width: 100%;
+    }
+    .card-case-container-desktop{
+        display: flex;
+        width: 100% !important;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba(34, 37, 42, 1);
+        padding: 1rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+        z-index: 0;
+    }
+    .img-case{
+        width: 100%;
+
+    }
+    .case-details{
+        width: 100%;
+
+    }
+    .case-title{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1;
+        margin: 0 auto;
+
+    }
+    .img-case img{
+        width: 80%;
+    }
+    .cases-container .p-carousel-prev {
+        position: absolute !important;
+        left: 75%;
+        top: -11%;
+        z-index: 2;
+        background-color: rgba(217, 217, 217, 0.507);
+        border-radius: 50% !important;
+        height: 48px;
+        width: 48px;
+    }
+    .cases-container .p-carousel-next{
+        top: -11%;
+    }
+    .p-carousel-container{
+        width: 100%;
+    }
+    .p-carousel-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .indicator-carousel{
+        display: flex;
+        height: 50px;
+        margin-right: 100px;
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+    .cases-container .p-carousel-next {
+        position: absolute !important;
+        left: 95%;
+        top: -10%;
+        z-index: 2;
+        background-color: rgba(217, 217, 217, 0.507);
+        border-radius: 50% !important;
+        height: 48px;
+        width: 48px;
+    }
+    .cases-container .p-carousel-prev {
+        position: absolute !important;
+        left: 70%;
+        top: -10%;
+        z-index: 2;
+        background-color: rgba(217, 217, 217, 0.507);
+        border-radius: 50% !important;
+        height: 48px;
+        width: 48px;
+    }
+}
