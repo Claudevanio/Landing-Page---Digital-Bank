@@ -55,6 +55,7 @@
 .details {
     width: 100%;
     padding: 1rem;
+    text-align: start;
 }
 
 .details h1 {
